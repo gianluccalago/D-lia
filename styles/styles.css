@@ -23,6 +23,12 @@
   --color-paper: #ffffff;
   --color-obsidian: #1f1f29;
 
+  /* Nav em tons de rosa (alinhado à dália do hero) */
+  --nav-fill: rgba(94, 58, 67, 0.80);     /* mauve/rosé escuro translúcido */
+  --nav-border: rgba(255, 255, 255, 0.14);
+  --nav-cta-fill: #3c2329;                 /* rosewood profundo */
+  --nav-cta-fill-hover: #2c181d;
+
   /* Fonts */
   --font-display: 'Source Serif 4', Lora, 'PT Serif', Georgia, serif;
   --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -167,10 +173,10 @@ strong { font-weight: 600; }
 .nav-pill {
   pointer-events: auto;
   display: flex; align-items: center; gap: clamp(12px, 2vw, 22px);
-  background: rgba(40, 40, 52, 0.82);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
-  backdrop-filter: blur(14px) saturate(140%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--nav-fill);
+  -webkit-backdrop-filter: blur(14px) saturate(135%);
+  backdrop-filter: blur(14px) saturate(135%);
+  border: 1px solid var(--nav-border);
   border-radius: var(--radius-nav);
   padding: 8px 8px 8px 18px;
   box-shadow: var(--shadow-sm);
@@ -197,16 +203,16 @@ strong { font-weight: 600; }
 .nav-links a:hover { color: #fff; }
 .nav-cta {
   display: inline-flex; align-items: center; gap: 6px;
-  background: var(--color-obsidian);
+  background: var(--nav-cta-fill);
   color: #fff;
   font-size: var(--text-body-sm); font-weight: 500;
   padding: 9px 16px;
   border-radius: var(--radius-buttons);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.14);
   white-space: nowrap;
   transition: background .15s ease, transform .15s ease;
 }
-.nav-cta:hover { background: #000; transform: translateY(-1px); }
+.nav-cta:hover { background: var(--nav-cta-fill-hover); transform: translateY(-1px); }
 
 .nav-toggle {
   display: none;
