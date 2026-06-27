@@ -178,7 +178,7 @@ strong { font-weight: 600; }
   backdrop-filter: blur(14px) saturate(135%);
   border: 1px solid var(--nav-border);
   border-radius: var(--radius-nav);
-  padding: 8px 8px 8px 18px;
+  padding: 7px 10px 7px 20px;
   box-shadow: var(--shadow-sm);
   max-width: 100%;
 }
@@ -206,8 +206,8 @@ strong { font-weight: 600; }
   background: var(--nav-cta-fill);
   color: #fff;
   font-size: var(--text-body-sm); font-weight: 500;
-  padding: 9px 16px;
-  border-radius: var(--radius-buttons);
+  padding: 10px 20px;
+  border-radius: var(--radius-nav);
   border: 1px solid rgba(255,255,255,0.14);
   white-space: nowrap;
   transition: background .15s ease, transform .15s ease;
